@@ -60,7 +60,6 @@ body {
   display: none;
 }
 
-#result_modal_psition {}
 
 #result {
   position: fixed;
@@ -185,10 +184,24 @@ button {
   top: 0;
 }
 
+/* small device */
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
+
+/* large device */
+@media only screen and (min-width: 701px) {
+  #histories {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card {
