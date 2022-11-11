@@ -15,66 +15,79 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body class="bg-light">
-    <div>
-        <h1 id="blog-page"><a href="blog.html" target="_blank">Blog</a></h1>
-        <div class="title">
-            <a href="index.html"><img src="./logo.png" /></a>
+<body>
+    <header>
+        <div>
+            <h1 id="blog-page"><a href="blog.html" target="_blank">Blog</a></h1>
+            <div class="title">
+                <a href="index.html"><img src="./logo.png" /></a>
+            </div>
         </div>
-    </div>
-    <h1 class="text-center m-5 text-warning">Welcome to <span class="text-info">Programming Blog</span></h1>
-    <!-- Blog start -->
-    <div class="container">
-        <article class="blog mb-4">
-            <div class="blog-body p-5">
-                <h5 class="blog-title fw-bold fs-4 text-center mb-4">Difference between local storage and session
-                    storage
-                </h5>
-                <p class="blog-text fs-5">sessionStorage is similar to localStorage ; the difference is that
-                    while data in
-                    localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever
-                    a document is loaded in a particular tab in the browser, a unique page session gets created and
-                    assigned to that particular tab.</p>
-            </div>
-        </article>
-        <article class="blog mb-4">
-            <div class="blog-body p-5">
-                <h5 class="blog-title fw-bold fs-4 text-center mb-4">Difference between global scope and block scope.
-                </h5>
-                <p class="blog-text fs-5">A block is a piece of code inside a set of curly braces {} and groups code
-                    statements together. An example of a block could be a function, like this: The Global scope. A
-                    variable exists inside or outside a block. If a variable is declared outside all functions or curly
-                    braces ({}), it exists in the global scope.</p>
-            </div>
-        </article>
-        <article class="blog mb-4">
-            <div class="blog-body p-5">
-                <h5 class="blog-title fw-bold fs-4 text-center mb-4">Explain how JavaScripts event loop works.</h5>
-                <p class="blog-text fs-5">Event loop is an endless loop, which waits for tasks, executes them and then
-                    sleeps until it receives more tasks. The event loop executes tasks from the event queue only when
-                    the call stack is empty i.e. there is no ongoing task. The event loop allows us to use callbacks and
-                    promises.</p>
-            </div>
-        </article>
-        <article class="blog mb-4">
-            <div class="blog-body p-5">
-                <h5 class="blog-title fw-bold fs-4 text-center mb-4">How many ways to get undefined value in javascript?
-                </h5>
-                <p class="fw-bold fs-5">8 Ways to get Undefined:</p>
-                <ul class="blog-text fs-5">
-                    <li>A declared variable without assigning any value to it.</li>
-                    <li>Implicit returns of functions due to missing return statements.</li>
-                    <li>Return statements that do not explicitly return anything.</li>
-                    <li>Lookups of non-existent properties in an object.</li>
-                    <li>Function parameters that have not passed.</li>
-                    <li>Anything that has been set to the value of undefined.</li>
-                    <li>Any expression in the form of void(expression)</li>
-                    <li>The value of the global variable undefined</li>
-                </ul>
-            </div>
-        </article>
-
-    </div>
+    </header>
+    <main>
+        <h1 class="text-center m-5 text-warning">Welcome to <span class="text-info">Programming Blog</span></h1>
+        <!-- Blog start -->
+        <div class="container">
+            <article class="blog mb-4">
+                <div class="blog-body p-5">
+                    <h5 class="blog-title fw-bold fs-4 text-center mb-4">Difference between Local storage and Session
+                        storage
+                    </h5>
+                    <p class="blog-text fs-5">sessionStorage is similar to localStorage ; the difference is that
+                        while data in
+                        localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+                        Whenever
+                        a document is loaded in a particular tab in the browser, a unique page session gets created and
+                        assigned to that particular tab.</p>
+                </div>
+            </article>
+            <article class="blog mb-4">
+                <div class="blog-body p-5">
+                    <h5 class="blog-title fw-bold fs-4 text-center mb-4">Difference between Global scope and Block
+                        scope.
+                    </h5>
+                    <p class="blog-text fs-5">A block is a piece of code inside a set of curly braces {} and groups code
+                        statements together. An example of a block could be a function, like this: The Global scope. A
+                        variable exists inside or outside a block. If a variable is declared outside all functions or
+                        curly
+                        braces ({}), it exists in the global scope.</p>
+                </div>
+            </article>
+            <article class="blog mb-4">
+                <div class="blog-body p-5">
+                    <h5 class="blog-title fw-bold fs-4 text-center mb-4">Explain how JavaScripts Event loop works.</h5>
+                    <p class="blog-text fs-5">Event loop is an endless loop, which waits for tasks, executes them and
+                        then
+                        sleeps until it receives more tasks. The event loop executes tasks from the event queue only
+                        when
+                        the call stack is empty i.e. there is no ongoing task. The event loop allows us to use callbacks
+                        and
+                        promises.</p>
+                </div>
+            </article>
+            <article class="blog mb-4">
+                <div class="blog-body p-5">
+                    <h5 class="blog-title fw-bold fs-4 text-center mb-4">How many ways to get Undefined value in
+                        javascript?
+                    </h5>
+                    <p class="fw-bold fs-5">8 Ways to get Undefined:</p>
+                    <ul class="blog-text fs-5">
+                        <li>A declared variable without assigning any value to it.</li>
+                        <li>Implicit returns of functions due to missing return statements.</li>
+                        <li>Return statements that do not explicitly return anything.</li>
+                        <li>Lookups of non-existent properties in an object.</li>
+                        <li>Function parameters that have not passed.</li>
+                        <li>Anything that has been set to the value of undefined.</li>
+                        <li>Any expression in the form of void(expression)</li>
+                        <li>The value of the global variable undefined</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="d-flex align-items-center justify-content-center mt-5">
+        <p class="text-center text-white">Programming Blog Copyright 2022</p>
+    </footer>
 
 
     <!-- Bootstrap script -->
